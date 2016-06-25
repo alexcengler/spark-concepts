@@ -50,3 +50,14 @@ multipy1 = svg1.selectAll(".multiply_number")
 		//.delay(1500)
 		.attr("y", function(d, i) { return ((i+1) * 40) });
 
+
+// results1 = svg1.selectAll(".results1_number")
+// 	.data(dat).enter()
+// 	.append("text")
+// 	.attr("class", "results1_number")
+// 	.attr("class", "number")
+// 	.attr("y", 40)
+// 		.attr("x", 700)
+// 		.text("x 2")
+
+
