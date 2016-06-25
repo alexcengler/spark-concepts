@@ -34,6 +34,19 @@ nums1 = svg1.selectAll(".input_number")
 	.attr("y", function(d, i) { return ((i + 1) * 40) })
 	.text(function (d){ return d });
 
-
-
+multipy1 = svg1.selectAll(".multiply_number")
+	.data(dat).enter()
+	.append("text")
+	.attr("class", "multiply_number")
+	.attr("class", "number")
+	.attr("y", 40)
+	.attr("x", 700)
+	.text(function() { return "x " + multiply_input })
+	.transition()
+		.duration(1500)
+		.attr("x", 60)
+	.transition()
+		.duration(function(d,i) { return 2000 })
+		//.delay(1500)
+		.attr("y", function(d, i) { return ((i+1) * 40) });
 
