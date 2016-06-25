@@ -17,6 +17,17 @@ var padding = {
 
 
 
+// dat = document.getElementsByName('textInput')[0]
+// 	.value
+// 	.split('')
+// 	.filter(function (d) { return /[0-9]/.exec(d); });
+
+// console.log(dat);
+
+
+
+
+
 svg1 = d3.select("#viz")
 	.append("svg")
 	.attr("width", viz.width)
